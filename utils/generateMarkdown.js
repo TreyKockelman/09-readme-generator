@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
   let licenseType = data.license;
-  let yourLicense = '';
+  let yourLicense;
   if(licenseType === 'MIT') {
     yourLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
   } else if (licenseType === 'GNU General') {
@@ -10,7 +10,7 @@ function renderLicenseBadge(data) {
   } else if (licenseType === 'BSD2') {
     yourLicense = `![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)`
   } else {
-    yourLicense = "N/A"
+    yourLicense = ""
   }
   return yourLicense;
 };
@@ -19,15 +19,15 @@ function renderLicenseBadge(data) {
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
   let licenseType = data.license;
-  let yourLicense = '';
+  let yourLicense;
   if(licenseType === 'MIT') {
-    yourLicense = `[Link to License](https://opensource.org/licenses/MIT)`
+    yourLicense = `https://opensource.org/licenses/MIT`
   } else if (licenseType === 'GNU General') {
-    yourLicense = `[Link to License](https://www.gnu.org/licenses/gpl-3.0)`
+    yourLicense = `https://www.gnu.org/licenses/gpl-3.0`
   } else if (licenseType === 'BSD2') {
-    yourLicense = `[Link to License](https://opensource.org/licenses/BSD-2-Clause)`
+    yourLicense = `https://opensource.org/licenses/BSD-2-Clause`
   } else {
-    yourLicense = "N/A"
+    yourLicense = ""
   }
   return yourLicense;
 };
@@ -39,7 +39,8 @@ function generateMarkdown(data) {
   let link = renderLicenseLink(data);
 
   return `# ${data.title}
-
+  ${badge}\n
+  
   ## Description
   ${data.description}
 
@@ -58,8 +59,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${badge}\n
-  ${link}
+  The license for this project is the [${data.license}](${link}) license.
 
   ## Contributors
   ${data.contributing}
