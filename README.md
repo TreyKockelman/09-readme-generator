@@ -1,9 +1,9 @@
-# Trey's Project
+# Trey Kockelman 13 Ecommerce Back End
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   
   ## Description
-  Description Here
+  This project is the back end development and setting up the routes for the back end of an ecommerce website. There were many challenges for this including the testing of the routes. Sometimes a single typo was the issue in getting the routes to work properly and the troubleshooting for that wasn't very effective. Other challenges included working with starter code that was given and working with that in tandem with my own code to make it work.
 
   ## Table of Contents
   - [Installation](#installation)
@@ -14,19 +14,19 @@
   - [Questions](#questions)
 
   ## Installation
-  Install Instructions here
+  NOne
 
   ## Usage
-  Usage Info here
+  The intended use of this is to give back end support to a e-commerce website
 
   ## License
   The license for this project is the [MIT](https://opensource.org/licenses/MIT) license.
 
   ## Contributors
-  Trey
+  Trey Kockelman
 
   ## Test Instructions
-  Test Instructions here
+  None
 
   ## Questions
   If you have any questions feel free to go to my github account [TreyKockelman](https://github.com/TreyKockelman) or email me at [kockelmant@gmail.com](kockelmant@gmail.com).
